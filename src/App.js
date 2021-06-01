@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const title = 'Welcome to Trial React.js Project';
+  const link = "https://www.google.com";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <h1>Hello Worldsss</h1>
+      <div className="content">
+        <h1>
+          { title }
+        </h1>
+        <p>{ 10 }</p>
+        <p>{ 'Hello' }</p>
+        <p>{ [1,'a',3] }</p>
+        <p>{ Math.random() }</p>
+        <a href={ link }>Google site</a>
+      </div>
     </div>
   );
 }
